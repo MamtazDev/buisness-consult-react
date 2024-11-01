@@ -1,5 +1,6 @@
-
-const Footer= () => {
+import { Link } from 'react-router-dom'; 
+import { footerData } from '../../utils/data';
+const Footer = () => {
   return (
     <div className="footer__section">
       <div className="container">
@@ -8,9 +9,7 @@ const Footer= () => {
 
             <div className="col-md-6 pb-4 col-lg-4">
               <div className="footer_logo">
-                <a href="./index.html">
-                  <img className="img-fluid" src="https://i.postimg.cc/y8DNYSsf/footer-logo.png" alt="img" />
-                </a>
+                <Link to="/"><img className="img-fluid" src="https://i.postimg.cc/y8DNYSsf/footer-logo.png" alt="img" /></Link>
                 <p className="footer-logo-text">
                   Amet minim mollit non deserunt ullamco est sit
                   <br className="d-none d-lg-block" />
@@ -25,38 +24,27 @@ const Footer= () => {
 
             <div className="col-md-6 pb-4 col-lg-2">
               <div className="footer-menu">
-                <p className="company-title">Our Company</p>
-                <a href="/">Home</a>
-                <a href="/about">About us</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="/service">Our services</a>
+                <p className="company-title">{footerData.company.title}</p>
+                {footerData.company.links.map((link, index) => (
+                  <Link key={index} to={link.url}>{link.label}</Link>
+                ))}
               </div>
             </div>
-
-            <div className="col-lg-1">
-              {/* Null */}
-            </div>
-
             <div className="col-md-6 pb-4 col-lg-2">
               <div className="footer-menu">
-                <p className="company-title">Services</p>
-                <a href="/service-details">Business Analysis</a>
-                <a href="/service-details">Strategic Planning</a>
-                <a href="/service-details">Business Consulting</a>
-                <a href="/service-details">Marketing Strategy</a>
-                <a href="/service-details">Experience Design</a>
-                <a href="/service-details">Audit & Evaluation</a>
+                <p className="company-title">{footerData.services.title}</p>
+                {footerData.services.links.map((link, index) => (
+                  <Link key={index} to={link.url}>{link.label}</Link>
+                ))}
               </div>
             </div>
 
             <div className="col-md-6 pb-4 col-lg-3">
               <div className="footer-menu-2">
-                <p className="company-title">Subscribe to our newsletter</p>
+                <p className="company-title">{footerData.newsletter.title}</p>
                 <form>
-                  <input required type="email" className="form-control" placeholder="Your email here" />
-                  <a href="#">
-                    <button className="btn btn-success subscribe" type="submit">Subscribe</button>
-                  </a>
+                  <input required type="email" className="form-control" placeholder={footerData.newsletter.placeholder} />
+                  <button className="btn btn-success subscribe" type="submit">Subscribe</button>
                 </form>
               </div>
             </div>
@@ -73,10 +61,10 @@ const Footer= () => {
               <p>All Copyrights are reserved by Mamdou Ghaneemy</p>
             </div>
             <div className="social-media">
-              <a href="#"><i className="fa-brands fa-facebook" style={{ color: '#ffffff' }}></i></a>
-              <a href="#"><i className="fa-brands fa-linkedin" style={{ color: '#ffffff' }}></i></a>
-              <a href="#"><i className="fa-brands fa-twitter" style={{ color: '#ffffff' }}></i></a>
-              <a href="#"><i className="fa-brands fa-instagram" style={{ color: '#ffffff' }}></i></a>
+              <Link href="#"><i className="fa-brands fa-facebook" style={{ color: '#ffffff' }}></i></Link>
+              <Link href="#"><i className="fa-brands fa-linkedin" style={{ color: '#ffffff' }}></i></Link>
+              <Link href="#"><i className="fa-brands fa-twitter" style={{ color: '#ffffff' }}></i></Link>
+              <Link href="#"><i className="fa-brands fa-instagram" style={{ color: '#ffffff' }}></i></Link>
             </div>
           </div>
         </div>

@@ -1569,3 +1569,15 @@ img.animatedImg {
   text-align: center;
   padding-top: 14px;
 }
+.expert__section .prev, .expert__section .next {
+  border-radius: 50%; /* Makes buttons rounded */
+  border-color: #12182B;
+  color: #12182B;
+  background-color: none;
+}
+
+.expert__section .prev:hover, .expert__section .next:hover {
+  background-color: #12182B; /* Change background on hover */
+  border-color: #12182B; /* Optional: change border color on hover */
+}
+

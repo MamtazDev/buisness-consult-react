@@ -1,15 +1,15 @@
-import { useRef } from 'react';
 import { IoArrowBackSharp, IoArrowForward } from 'react-icons/io5';
 import { Link } from 'react-router-dom'; 
+import { useRef } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react"; 
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
-
-
+import { sliderData } from '../../utils/data'; 
 
 const Business = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  
   return (
     <div className="business__section">
       <div className="container">
@@ -22,7 +22,7 @@ const Business = () => {
                 data-wow-duration="1.05s"
                 data-wow-delay="100ms"
               >
-                 We Provide The Best
+                We Provide The Best
                 <Link to="/about"> 
                   <img
                     className="img-fluid img-res"
@@ -72,56 +72,47 @@ const Business = () => {
           </div>
 
           {/* Business Slider */} 
-        <div className="mt-8 lg:mt-[88px] pb-[100px]">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          centeredSlides={true}
-          modules={[Pagination, Navigation]}
-          pagination={{
-            type: "fraction",
-          }}
-          navigation={{
-            nextEl: ".next",
-            prevEl: ".prev",
-          }}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            1440: {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            },
-          }}
-          className="mySwiper cursor-pointer"
-        >
-          <SwiperSlide>
-          <img className="img-fluid" src="https://i.postimg.cc/g0nHdXbK/slide-1.png" alt="slide 1" />
-          </SwiperSlide>
-          <SwiperSlide>
-          <img className="img-fluid" src="https://i.postimg.cc/g0nHdXbK/slide-1.png" alt="slide 1" />
-          </SwiperSlide>
-          <SwiperSlide>
-          <img className="img-fluid" src="https://i.postimg.cc/g0nHdXbK/slide-1.png" alt="slide 1" />
-          </SwiperSlide>
-          <SwiperSlide>
-          <img className="img-fluid" src="https://i.postimg.cc/g0nHdXbK/slide-1.png" alt="slide 1" />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-      </div>
+          <div className="mt-8 lg:mt-[88px] pb-[100px]">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              centeredSlides={true}
+              modules={[Pagination, Navigation]}
+              pagination={{ type: "fraction" }}
+              navigation={{
+                nextEl: ".next",
+                prevEl: ".prev",
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                1440: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+              }}
+              className="mySwiper cursor-pointer"
+            >
+              {sliderData.map(slide => (
+                <SwiperSlide key={slide.id}>
+                  <img className="img-fluid" src={slide.imageUrl} alt={slide.altText} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
+    </div>
   );
 };
 

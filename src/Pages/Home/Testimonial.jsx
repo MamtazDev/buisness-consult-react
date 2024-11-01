@@ -1,45 +1,5 @@
 import React from 'react';
-
-// Sample testimonial data
-const testimonials = [
-  {
-    quote: "Working with Consuly to implement their strategic planning framework has helped us focus on the biggest opportunities for growth.",
-    clientName: "Maya Language",
-    clientDesignation: "Director ACT",
-    backgroundImg: "https://i.postimg.cc/y808ZC39/tesntimonial-Bg-One.png",
-    testimonialImg: "https://i.postimg.cc/L5rmJxHN/tesntimonial-Img.png",
-    quoteImg: "https://i.postimg.cc/76wG6YBf/quote.png",
-    ratingImg: "https://i.postimg.cc/5ytXBKWJ/rating.png",
-  },
-  // Duplicate the object for additional testimonials or modify as needed
-  {
-    quote: "Working with Consuly to implement their strategic planning framework has helped us focus on the biggest opportunities for growth.",
-    clientName: "Maya Language",
-    clientDesignation: "Director ACT",
-    backgroundImg: "https://i.postimg.cc/y808ZC39/tesntimonial-Bg-One.png",
-    testimonialImg: "https://i.postimg.cc/L5rmJxHN/tesntimonial-Img.png",
-    quoteImg: "https://i.postimg.cc/76wG6YBf/quote.png",
-    ratingImg: "https://i.postimg.cc/5ytXBKWJ/rating.png",
-  },
-  {
-    quote: "Working with Consuly to implement their strategic planning framework has helped us focus on the biggest opportunities for growth.",
-    clientName: "Maya Language",
-    clientDesignation: "Director ACT",
-    backgroundImg: "https://i.postimg.cc/y808ZC39/tesntimonial-Bg-One.png",
-    testimonialImg: "https://i.postimg.cc/L5rmJxHN/tesntimonial-Img.png",
-    quoteImg: "https://i.postimg.cc/76wG6YBf/quote.png",
-    ratingImg: "https://i.postimg.cc/5ytXBKWJ/rating.png",
-  },
-  {
-    quote: "Working with Consuly to implement their strategic planning framework has helped us focus on the biggest opportunities for growth.",
-    clientName: "Maya Language",
-    clientDesignation: "Director ACT",
-    backgroundImg: "https://i.postimg.cc/y808ZC39/tesntimonial-Bg-One.png",
-    testimonialImg: "https://i.postimg.cc/L5rmJxHN/tesntimonial-Img.png",
-    quoteImg: "https://i.postimg.cc/76wG6YBf/quote.png",
-    ratingImg: "https://i.postimg.cc/5ytXBKWJ/rating.png",
-  },
-];
+import { testimonials } from '../../utils/data'; 
 
 const Testimonial = () => {
   return (
@@ -86,7 +46,7 @@ const Testimonial = () => {
           </div>
           <div className="swiper-pagination"></div>
         </div>
-        {/* Swiper -/end */}
+       
       </div>
     </div>
   );

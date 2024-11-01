@@ -1,6 +1,9 @@
-
+import  { useState } from 'react';
+import { missionData } from '../../utils/data'; // Adjust the path as necessary
 
 const Mission = () => {
+  const [activeTab, setActiveTab] = useState(missionData[0].id);
+
   return (
     <div className="mission__section">
       <div className="container">
@@ -48,91 +51,41 @@ const Mission = () => {
                 data-wow-duration="1.10s"
                 data-wow-delay="300ms"
               >
-                We are a team of passionate business consultants &
-                <br className="d-block d-lg-none" />
-                technology
-                <br className="d-none d-lg-block" />
+                We are a team of passionate business consultants & technology
                 veterans eager to help companies reach their full potential.
               </p>
 
               {/* Tab Start Here */}
               <ul className="nav nav-tabs" id="myTab" role="tablist">
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link active tab"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#home"
-                    type="button"
-                    role="tab"
-                    aria-controls="home"
-                    aria-selected="true"
-                  >
-                    Our Mission
-                  </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link tab"
-                    id="profile-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="profile"
-                    aria-selected="false"
-                  >
-                    Our Vision
-                  </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link tab"
-                    id="contact-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#contact"
-                    type="button"
-                    role="tab"
-                    aria-controls="contact"
-                    aria-selected="false"
-                  >
-                    Our Value
-                  </button>
-                </li>
+                {missionData.map((tab) => (
+                  <li className="nav-item" role="presentation" key={tab.id}>
+                    <button
+                      className={`nav-link tab ${activeTab === tab.id ? 'active' : ''}`}
+                      id={`${tab.id}-tab`}
+                      onClick={() => setActiveTab(tab.id)}
+                      type="button"
+                      role="tab"
+                      aria-controls={tab.id}
+                      aria-selected={activeTab === tab.id}
+                    >
+                      {tab.title}
+                    </button>
+                  </li>
+                ))}
               </ul>
 
               <div className="tab-content" id="myTabContent">
-                <div
-                  className="tab-pane fade show active"
-                  id="home"
-                  role="tabpanel"
-                  aria-labelledby="home-tab"
-                >
-                  Our strategic planning process rapidly delivers
-                  <br className="d-block d-md-none" /> plans that stick,
-                  <br className="d-none d-md-block d-lg-none" /> with execution support
-                  <br className="d-block d-md-none" /> to make your plans a reality.
-                </div>
-                <div
-                  className="tab-pane fade"
-                  id="profile"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
-                  Our strategic planning process rapidly delivers plans that stick,
-                  <br className="d-none d-md-block d-lg-none" /> with execution support
-                  <br className="d-block d-md-none" /> to make your plans a reality.
-                </div>
-                <div
-                  className="tab-pane fade"
-                  id="contact"
-                  role="tabpanel"
-                  aria-labelledby="contact-tab"
-                >
-                  Our strategic planning process rapidly delivers plans that stick,
-                  <br className="d-none d-md-block d-lg-none" /> with execution support
-                  <br className="d-block d-md-none" /> to make your plans a reality.
-                </div>
+                {missionData.map((tab) => (
+                  <div
+                    key={tab.id}
+                    className={`tab-pane fade ${activeTab === tab.id ? 'show active' : ''}`}
+                    id={tab.id}
+                    role="tabpanel"
+                    aria-labelledby={`${tab.id}-tab`}
+                  >
+                    {tab.content}
+                  </div>
+                ))}
               </div>
               {/* Tab End Here */}
             </div>
