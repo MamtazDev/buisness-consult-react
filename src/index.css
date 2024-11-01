@@ -1367,7 +1367,7 @@ img.animatedImg {
 .service-parent:hover .service-title {
   color: #fff;
 }
-.service-parent:nth-last-child() {
+.service-parent:nth-last-child(1) {
   margin-bottom: 0px;
 }
 
