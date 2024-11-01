@@ -1,5 +1,3 @@
-import React from 'react';
-
 const VideoSection = () => {
   return (
     <div className="video-section BG">
@@ -15,7 +13,7 @@ const VideoSection = () => {
 
           {/* Video Thumbnail with Play Icon */}
           <div className="video-thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal">
-            <img src="./assets/images/vid-thumnail.png" alt="Video Thumbnail" className="img-fluid" />
+            <img src="https://i.postimg.cc/j5YNfYXJ/vid-thumnail.png" alt="Video Thumbnail" className="img-fluid" />
             <div className="play-icon">&#9654;</div>
           </div>
 

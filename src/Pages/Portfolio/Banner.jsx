@@ -6,7 +6,7 @@ const Banner = () => {
           <div className="row align-items-center">
             <div className="col-lg-4">
               <div className="port-parent wow fadeInUp" data-wow-duration="1.05s" data-wow-delay="250ms">
-                <img src="./assets/images/Ellipse.png" alt="icon" />
+                <img src="https://i.postimg.cc/HWvpV43Q/Ellipse.png" alt="icon" />
                 <p className="port-name">Portfolio</p>
               </div>
               <h3 className="port-title wow fadeInUp" data-wow-duration="1.05s" data-wow-delay="350ms">
@@ -24,7 +24,7 @@ const Banner = () => {
                 <div className="video-area">
                   {/* Video Thumbnail with Play Icon */}
                   <div className="video-thumbnail" data-bs-toggle="modal" data-bs-target="#videoModal">
-                    <img className="img-fluid w-100" src="./assets/images/port-bg.png" alt="Video Thumbnail" />
+                    <img className="img-fluid w-100" src="https://i.postimg.cc/q7pfmzjJ/port-bg.png" alt="Video Thumbnail" />
                     <div className="play-icon">&#9654;</div>
                   </div>
 

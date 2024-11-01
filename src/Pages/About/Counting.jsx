@@ -14,7 +14,7 @@ const Counting = () => {
                     <h2 className="count-number number">250</h2>
                     <span className="count-number">+</span>
                   </div>
-                  <p className="count-text">Partner with us</p>
+                  <p className="count-text color-d">Partner with us</p>
                 </div>
               </div>
             </div>

@@ -25,7 +25,7 @@ const Service = () => {
           <div className="row g-4">
             {/* Service Card 1 */}
             <div className="col-md-6 col-lg-4">
-              <a href="./service-details.html">
+              <a href="/service-details">
                 <div className="card wow fadeInUp" data-wow-duration="1.05s" data-wow-delay="450ms">
                   <img src="https://i.postimg.cc/yYvy34Bx/Card-img-1-1.png" className="card-img-top first" alt="Business Analysis" />
                   <img src="https://i.postimg.cc/7683rq1s/Card-img-1.png" className="card-img-top second" alt="Business Analysis" />
@@ -45,7 +45,7 @@ const Service = () => {
 
             {/* Service Card 2 */}
             <div className="col-md-6 col-lg-4">
-              <a href="./service-details.html">
+              <a href="/service-details">
                 <div className="card wow fadeInUp" data-wow-duration="1.05s" data-wow-delay="500ms">
                   <img src="https://i.postimg.cc/TPy0Xkzw/Card-img-2.png" className="card-img-top first" alt="Strategic Planning" />
                   <img src="https://i.postimg.cc/PxYMCCrn/Card-img-2-1.png" className="card-img-top second" alt="Strategic Planning" />
@@ -65,7 +65,7 @@ const Service = () => {
 
             {/* Service Card 3 */}
             <div className="col-md-6 col-lg-4">
-              <a href="./service-details.html">
+              <a href="/service-details">
                 <div className="card wow fadeInUp" data-wow-duration="1.05s" data-wow-delay="600ms">
                   <img src="https://i.postimg.cc/Bb5NVXdB/Card-img-3.png" className="card-img-top first" alt="Business Consulting" />
                   <img src="https://i.postimg.cc/rwwgfyg5/Card-img-3-1.png" className="card-img-top second" alt="Business Consulting" />
@@ -103,7 +103,7 @@ const Service = () => {
 
             {/* Service Card 5 */}
             <div className="col-md-6 col-lg-4">
-              <a href="./service-details.html">
+              <a href="/service-details">
                 <div className="card wow fadeInUp" data-wow-duration="1.05s" data-wow-delay="800ms">
                   <img src="https://i.postimg.cc/G2dCfsfX/Card-img-5.png" className="card-img-top first" alt="Experience Design" />
                   <img src="https://i.postimg.cc/1tGznQkj/Card-img-5-1.png" className="card-img-top second" alt="Experience Design" />
