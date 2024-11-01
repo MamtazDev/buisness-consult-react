@@ -93,6 +93,26 @@ export const sliderData = [
     imageUrl: "https://i.postimg.cc/g0nHdXbK/slide-1.png",
     altText: "slide 4",
   },
+  {
+    id: 1,
+    imageUrl: "https://i.postimg.cc/g0nHdXbK/slide-1.png",
+    altText: "slide 1",
+  },
+  {
+    id: 2,
+    imageUrl: "https://i.postimg.cc/g0nHdXbK/slide-1.png",
+    altText: "slide 2",
+  },
+  {
+    id: 3,
+    imageUrl: "https://i.postimg.cc/g0nHdXbK/slide-1.png",
+    altText: "slide 3",
+  },
+  {
+    id: 4,
+    imageUrl: "https://i.postimg.cc/g0nHdXbK/slide-1.png",
+    altText: "slide 4",
+  },
 ];
 // missionData.js
 export const missionData = [

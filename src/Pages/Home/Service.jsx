@@ -24,7 +24,7 @@ const Service = () => {
           <div className="row g-4">
             {services.map((service, index) => (
               <div className="col-md-6 col-lg-4" key={index}>
-                <Link href={service.link}>
+                <Link to={service.link}>
                   <div className="card wow fadeInUp" data-wow-duration="1.05s" data-wow-delay={`${450 + index * 50}ms`}>
                     <img src={service.image1} className="card-img-top first" alt={service.title} />
                     <img src={service.image2} className="card-img-top second" alt={service.title} />

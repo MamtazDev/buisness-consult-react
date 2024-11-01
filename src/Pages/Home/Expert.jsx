@@ -20,6 +20,21 @@ const mentors = [
     designation: 'Director ACT',
     image: 'https://i.postimg.cc/RZx4t8Rr/mentor-3.png',
   },
+  {
+    name: 'Salehdin Ahdam',
+    designation: 'Head of Power MTI',
+    image: 'https://i.postimg.cc/fLRwL9vJ/mentor-1.png',
+  },
+  {
+    name: 'Muhadi Ahmat',
+    designation: 'Senior Client Partner',
+    image: 'https://i.postimg.cc/6qDwY1xv/mentor-2.png',
+  },
+  {
+    name: 'Jessica Angel',
+    designation: 'Director ACT',
+    image: 'https://i.postimg.cc/RZx4t8Rr/mentor-3.png',
+  },
 ];
 
 const Expert = () => {
@@ -35,16 +50,18 @@ const Expert = () => {
             <br className="d-none d-lg-block" />
             experts in different fields.
           </h3>
-          <div className="flex justify-end">
+          <div style={{justifyContent:'end', display:'flex',marginBottom:"30px"}}>
             <button
               ref={prevRef}
-              className="bg-[#FF4C00] text-white p-5 rounded-full prev"
+              className="text-[#12182B] prev"
+              style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#12182B"}}
             >
               <IoArrowBackSharp />
             </button>
             <button
               ref={nextRef}
-              className="border-[1px] border-white text-white p-5 rounded-full next ml-2"
+              className="text-[#12182B] next"
+              style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#12182B"}}
             >
               <IoArrowForward />
             </button>
@@ -54,7 +71,7 @@ const Expert = () => {
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
-            centeredSlides={true}
+            freeMode={true}
             modules={[Pagination, Navigation]}
             pagination={{
               type: "fraction",

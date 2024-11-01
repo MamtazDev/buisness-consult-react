@@ -54,17 +54,19 @@ const Business = () => {
                 your business up to a high level.
               </p>
             </div>
-            <div>
+            <div style={{justifyContent:'end', display:'flex',marginBottom:"30px"}}>
               <button
                 ref={prevRef}
-                className="bg-[#FF4C00] text-white p-5 prev"
+                className="text-white  prev "
+                 style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#12182B"}}
               >
                 <IoArrowBackSharp />
               </button>
               <button
                 id="swiper-next2"
                 ref={nextRef}
-                className="border-[1px] border-white text-white p-5 next"
+                className="text-white next"
+                style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#12182B"}}
               >
                 <IoArrowForward />
               </button>
@@ -72,11 +74,11 @@ const Business = () => {
           </div>
 
           {/* Business Slider */} 
-          <div className="mt-8 lg:mt-[88px] pb-[100px]">
+          <div>
             <Swiper
               slidesPerView={1}
               spaceBetween={10}
-              centeredSlides={true}
+              freeMode={true}
               modules={[Pagination, Navigation]}
               pagination={{ type: "fraction" }}
               navigation={{
@@ -101,11 +103,11 @@ const Business = () => {
                   spaceBetween: 20,
                 },
               }}
-              className="mySwiper cursor-pointer"
+              className="mySwiper cursor-pointer swiper-no-bg "
             >
               {sliderData.map(slide => (
                 <SwiperSlide key={slide.id}>
-                  <img className="img-fluid" src={slide.imageUrl} alt={slide.altText} />
+                  <img className="img-fluid " src={slide.imageUrl} alt={slide.altText} style={{borderRadius:"16px"}} />
                 </SwiperSlide>
               ))}
             </Swiper>

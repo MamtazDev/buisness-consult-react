@@ -520,8 +520,6 @@ button.slick-prev.slick-arrow:hover {
   font-size: 48px;
   font-weight: 600;
   line-height: 150%;
-  /* 72px */
-  padding-bottom: 56px;
   position: relative;
 }
 
@@ -658,7 +656,6 @@ button.slick-prev.slick-arrow:hover {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
