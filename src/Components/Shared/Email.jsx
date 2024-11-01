@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'; 
+
 const Email = () => {
   return (
     <div className="email__section">
@@ -17,11 +19,10 @@ const Email = () => {
 
           <form className="email_field wow fadeInUp" data-wow-duration="1.05s" data-wow-delay="350ms">
             <input required type="email" className="form-control" placeholder="Your email here" />
-            <a href="#">
-              <button className="btn btn-success get-started" type="submit">
+           <Link to="/"> <button className="btn btn-success get-started" type="submit">
                 Get Started
-              </button>
-            </a>
+              </button></Link>
+          
           </form>
         </div>
       </div>

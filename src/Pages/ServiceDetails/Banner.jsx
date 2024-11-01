@@ -1,6 +1,5 @@
 import { BsDownload } from "react-icons/bs";
 import { FaRegFilePdf } from "react-icons/fa";
-import { RiDownload2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 const Banner = () => {
   return (

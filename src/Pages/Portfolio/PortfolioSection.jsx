@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'; 
+
 const PortfolioSection = () => {
   const portfolioItems = [
     {
@@ -69,12 +71,19 @@ const PortfolioSection = () => {
                   </div>
                   <div className={`description-area ${item.descriptionClass}`}>
                     <h3 className="component-name">{item.name}</h3>
-                    <a href="#">
-                      <i className="fa-solid fa-arrow-right-long icon"></i>
-                    </a>
+                      <Link to="/"><i className="fa-solid fa-arrow-right-long icon"></i></Link>
                   </div>
                 </div>
               ))}
+                   <div className="btn-res">
+                <button
+                 style={{padding:"18px" ,border:"none",backgroundColor:"#12182b" , color:"#fff" ,borderRadius:"8px"}}
+                  type="submit"
+                >
+                  View More
+                  <i className="fa-solid fa-arrow-right-long icon"></i>
+                </button>
+              </div>
             </div>
 
             <div className="col-lg-6">
@@ -97,22 +106,10 @@ const PortfolioSection = () => {
                   </div>
                   <div className={`description-area ${item.descriptionClass}`}>
                     <h3 className="component-name">{item.name}</h3>
-                    <a href="#">
-                      <i className="fa-solid fa-arrow-right-long icon"></i>
-                    </a>
+                    <Link to=""><i className="fa-solid fa-arrow-right-long icon"></i></Link>
                   </div>
                 </div>
               ))}
-
-              <div className="btn-res">
-                <button
-                  className="btn btn-success dark d-md-block d-lg-none"
-                  type="submit"
-                >
-                  View More
-                  <i className="fa-solid fa-arrow-right-long icon"></i>
-                </button>
-              </div>
             </div>
           </div>
         </div>
