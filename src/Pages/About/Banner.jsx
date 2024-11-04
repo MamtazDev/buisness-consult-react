@@ -40,7 +40,7 @@ const Banner = () => {
                 <Link to="/service">
                   <button className="btn btn-success dark" type="submit">
                     Learn More
-                    <i className="fa-solid fa-arrow-right-long icon"></i>
+                    <i className="fa-solid fa-arrow-right-long icon" style={{marginLeft:"6px"}}></i>
                   </button>
                 </Link>
               </div>

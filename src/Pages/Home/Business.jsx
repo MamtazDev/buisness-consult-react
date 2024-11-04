@@ -16,15 +16,15 @@ const Business = () => {
         <div className="business__area">
           <div className="row align-items-center">
             {/* Left Column with Title */}
-            <div className="col-lg-6">
-              <h2
+            <div className="col-lg-6" >
+              <h2 
                 className="business-title wow fadeInUp"
                 data-wow-duration="1.05s"
                 data-wow-delay="100ms"
               >
                 We Provide The Best
                 <Link to="/about"> 
-                  <img
+                  <img style={{marginLeft:"8px"}}
                     className="img-fluid img-res"
                     src="https://i.postimg.cc/65rH1vB2/slide-logo.png"
                     alt="slide logo"
@@ -34,7 +34,7 @@ const Business = () => {
                 <br className="d-block d-lg-none" /> Business <br className="d-none d-lg-block" />
                 Development
                 <Link to="/services"> 
-                  <img
+                  <img style={{marginLeft:"8px"}}
                     className="img-fluid img-res"
                     src="https://i.postimg.cc/t4DB9GZ9/slide-img.png"
                     alt="slide img"
@@ -54,11 +54,11 @@ const Business = () => {
                 your business up to a high level.
               </p>
             </div>
-            <div style={{justifyContent:'end', display:'flex',marginBottom:"30px"}}>
+            <div style={{justifyContent:'end', display:'flex',marginBottom:"30px", gap:'10px'}}>
               <button
                 ref={prevRef}
                 className="text-white  prev "
-                 style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#12182B"}}
+                 style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#fff"}}
               >
                 <IoArrowBackSharp />
               </button>
@@ -66,14 +66,14 @@ const Business = () => {
                 id="swiper-next2"
                 ref={nextRef}
                 className="text-white next"
-                style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#12182B"}}
+                style={{borderRadius:'100%' ,width:'70px', height:"70px" ,background:"none" ,borderColor:"#fff"}}
               >
                 <IoArrowForward />
               </button>
             </div>
           </div>
 
-          {/* Business Slider */} 
+
           <div>
             <Swiper
               slidesPerView={1}
@@ -105,11 +105,13 @@ const Business = () => {
               }}
               className="mySwiper cursor-pointer swiper-no-bg "
             >
-              {sliderData.map(slide => (
+             <div className='col-lg-3'>
+             {sliderData.map(slide => (
                 <SwiperSlide key={slide.id}>
                   <img className="img-fluid " src={slide.imageUrl} alt={slide.altText} style={{borderRadius:"16px"}} />
                 </SwiperSlide>
               ))}
+             </div>
             </Swiper>
           </div>
         </div>

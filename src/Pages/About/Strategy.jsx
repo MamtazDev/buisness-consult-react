@@ -1,4 +1,5 @@
 import { strategyData } from "../../utils/data";
+import { Link } from "react-router-dom";
 
 const Strategy = () => {
   return (
@@ -31,9 +32,10 @@ const Strategy = () => {
                 <br className="d-none d-xl-block" />
                 impetus.
               </p>
-              <button className="btn btn-success dark" type="submit">
-                View More <i className="fa-solid fa-arrow-right-long icon"></i>
-              </button>
+              <Link to="/service"><button className="btn btn-success dark" type="submit">
+                View More <i className="fa-solid fa-arrow-right-long icon" style={{marginLeft:"6px"}}></i>
+              </button></Link>
+              
             </div>
             <div className="col-lg-1"></div>
             <div className="col-lg-6 right-side">

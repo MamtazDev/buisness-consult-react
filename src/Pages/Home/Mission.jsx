@@ -37,15 +37,9 @@ const Mission = () => {
             </div>
 
             <div className="col-lg-5 offset-lg-1">
-              <h3
-                className="mission_title wow fadeInUp"
-                data-wow-duration="1.10s"
-                data-wow-delay="240ms"
-              >
-                We Lead Your Business
-                <br className="d-block d-lg-none" />
-                Team To Victory
-              </h3>
+            <h3 className="mission_title wow fadeInUp" data-wow-duration="1.10s" data-wow-delay="240ms">We Lead Your
+              Business <br className="d-block d-lg-none"/>
+              Team To Victory</h3>
               <p
                 className="mission-para wow fadeInUp"
                 data-wow-duration="1.10s"

@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer__section">
       <div className="container">
         <div className="footer__area">
-          <div className="row">
+          <div className="row" style={{marginBottom:"80px"}}>
 
             <div className="col-md-6 pb-4 col-lg-4">
               <div className="footer_logo">

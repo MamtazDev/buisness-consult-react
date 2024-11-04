@@ -22,13 +22,15 @@ const Banner = () => {
           </h3>
 
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4" >
               <div
                 className="new-left-side-bar wow fadeInUp"
                 data-wow-duration="1.05s"
                 data-wow-delay="350ms"
+                style={{paddingBottom:"20px"}}
               >
                 <h4 className="side-title">More Services</h4>
+                <div style={{display:"flex" ,flexDirection:"column", gap:"16px"}}>
                 {[
                   "Business Analysis",
                   "Strategic Planning",
@@ -38,13 +40,13 @@ const Banner = () => {
                   "Audit & Evaluation",
                 ].map((service, index) => (
                   <Link to="/" key={index}>
-                    {" "}
                     <div className="service-parent">
                       <p className="new-service-title">{service}</p>
                       <i className="fa-solid fa-arrow-right-long icon"></i>
                     </div>
                   </Link>
                 ))}
+                </div>
               </div>
 
               <div

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'; 
+import { Link } from "react-router-dom";
 
 const PortfolioSection = () => {
   const portfolioItems = [
@@ -71,18 +71,31 @@ const PortfolioSection = () => {
                   </div>
                   <div className={`description-area ${item.descriptionClass}`}>
                     <h3 className="component-name">{item.name}</h3>
-                      <Link to="/"><i className="fa-solid fa-arrow-right-long icon"></i></Link>
+                    <Link to="/service">
+                      <i className="fa-solid fa-arrow-right-long icon"></i>
+                    </Link>
                   </div>
                 </div>
               ))}
-                   <div className="btn-res">
-                <button
-                 style={{padding:"18px" ,border:"none",backgroundColor:"#12182b" , color:"#fff" ,borderRadius:"8px"}}
-                  type="submit"
-                >
-                  View More
-                  <i className="fa-solid fa-arrow-right-long icon"></i>
-                </button>
+              <div className="btn-res">
+                <Link to="/service">
+                  <button
+                    style={{
+                      padding: "18px",
+                      border: "none",
+                      backgroundColor: "#12182b",
+                      color: "#fff",
+                      borderRadius: "8px",
+                    }}
+                    type="submit"
+                  >
+                    View More
+                    <i
+                      className="fa-solid fa-arrow-right-long icon"
+                      style={{ marginLeft: "6px" }}
+                    ></i>
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -106,7 +119,9 @@ const PortfolioSection = () => {
                   </div>
                   <div className={`description-area ${item.descriptionClass}`}>
                     <h3 className="component-name">{item.name}</h3>
-                    <Link to=""><i className="fa-solid fa-arrow-right-long icon"></i></Link>
+                    <Link to="/service">
+                      <i className="fa-solid fa-arrow-right-long icon"></i>
+                    </Link>
                   </div>
                 </div>
               ))}

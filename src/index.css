@@ -460,19 +460,20 @@ button.slick-prev.slick-arrow:hover {
 }
 
 .expert-title {
-  color: var(--Primary-Color, #12182b);
+  color: var(--Primary-Color, #12182B);
   font-size: 48px;
   font-weight: 600;
   line-height: 150%;
-  /* padding-bottom: 56px; */
+  /* 72px */
+  padding-bottom: 56px;
   position: relative;
 }
 
 .expert-title::after {
   position: absolute;
-  background-image: url("https://i.postimg.cc/YSVY4Nmj/design.png");
+  background-image: url('../images/expert-design.png');
   background-repeat: no-repeat;
-  content: "";
+  content: '';
   z-index: 3;
   right: 700px;
   top: 32%;
@@ -486,27 +487,31 @@ button.slick-prev.slick-arrow:hover {
 
 .expert-slider-class .img-middle {
   border-radius: 0px 80px;
+
 }
 
 .mentor-name {
-  color: var(--Primary-Color, #12182b);
+  color: var(--Primary-Color, #12182B);
   font-size: 32px;
   font-weight: 600;
   line-height: 150%;
+  /* 48px */
   padding: 24px 0 12px 0;
   text-align: center;
 }
 
 .mentor-designation {
-  color: var(--Text-Color-1, #5e5e5e);
+  color: var(--Text-Color-1, #5E5E5E);
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
   /* 27px */
   text-align: center;
+
 }
 
 .expert-swiper .swiper-slide {
+
   flex-direction: column;
 }
 
