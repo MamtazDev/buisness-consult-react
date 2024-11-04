@@ -67,8 +67,8 @@ const Expert = () => {
               className="text-[#12182B] prev"
               style={{
                 borderRadius: "100%",
-                width: "70px",
-                height: "70px",
+                width: "50px",
+                height: "50px",
                 background: "none",
                 borderColor: "#12182B",
               }}
@@ -80,8 +80,8 @@ const Expert = () => {
               className="text-[#12182B] next"
               style={{
                 borderRadius: "100%",
-                width: "70px",
-                height: "70px",
+                width: "50px",
+                height: "50px",
                 background: "none",
                 borderColor: "#12182B",
               }}

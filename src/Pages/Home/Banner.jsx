@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { bannerData } from "../../utils/data";
 import { TypeAnimation } from "react-type-animation";
+import { useEffect } from "react";
+import WOW from "wow.js";
+
 const Banner = () => {
+  useEffect(() => {
+    new WOW().init();
+  }, []);
   return (
     <div className="hero__section">
       <div className="container">
