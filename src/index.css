@@ -1255,6 +1255,15 @@ img.animatedImg {
   line-height: 150%; /* 27px */
   padding-bottom: 32px;
 }
+/* Custom Swiper pagination styles */
+.swiper-pagination-bullet {
+  background-color: green !important; /* Use !important to force the color */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #32CD32 !important; /* Different shade of green for active bullet */
+}
+
 .details-parent {
   display: flex;
   align-items: center;
