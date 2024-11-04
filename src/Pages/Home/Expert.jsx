@@ -1,42 +1,9 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { IoArrowBackSharp, IoArrowForward } from "react-icons/io5";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-
-const mentors = [
-  {
-    name: "Salehdin Ahdam",
-    designation: "Head of Power MTI",
-    image: "https://i.postimg.cc/fLRwL9vJ/mentor-1.png",
-  },
-  {
-    name: "Muhadi Ahmat",
-    designation: "Senior Client Partner",
-    image: "https://i.postimg.cc/6qDwY1xv/mentor-2.png",
-  },
-  {
-    name: "Jessica Angel",
-    designation: "Director ACT",
-    image: "https://i.postimg.cc/RZx4t8Rr/mentor-3.png",
-  },
-  {
-    name: "Salehdin Ahdam",
-    designation: "Head of Power MTI",
-    image: "https://i.postimg.cc/fLRwL9vJ/mentor-1.png",
-  },
-  {
-    name: "Muhadi Ahmat",
-    designation: "Senior Client Partner",
-    image: "https://i.postimg.cc/6qDwY1xv/mentor-2.png",
-  },
-  {
-    name: "Jessica Angel",
-    designation: "Director ACT",
-    image: "https://i.postimg.cc/RZx4t8Rr/mentor-3.png",
-  },
-];
 
 const Expert = () => {
   const prevRef = useRef(null);
@@ -106,25 +73,97 @@ const Expert = () => {
           modules={[Navigation]}
           className="expert-slider-class"
         >
-          {mentors.map((mentor, index) => (
-            <SwiperSlide key={index}>
-              <div
-                className="wow fadeInUp"
-                data-wow-duration="1.05s"
-                data-wow-delay={`${300 + index * 50}ms`}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  textAlign: "center",
-                }}
-              >
-                <img className="img-fluid" src={mentor.image} alt="img" />
-                <h4 className="mentor-name">{mentor.name}</h4>
-                <p className="mentor-designation">{mentor.designation}</p>
-              </div>
-            </SwiperSlide>
-          ))}
+          <SwiperSlide>
+            <div
+              className="wow fadeInUp"
+              data-wow-duration="1.05s"
+              data-wow-delay="300ms"
+            >
+              <img
+                className="img-fluid"
+                src="https://i.postimg.cc/DwdFPshw/mentor-1.png"
+                alt="img"
+              />
+              <h4 className="mentor-name">Salehdin Ahdam</h4>
+              <p className="mentor-designation">Head of Power MTI</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className="wow fadeInUp"
+              data-wow-duration="1.05s"
+              data-wow-delay="350ms"
+            >
+              <img
+                className="img-fluid img-middle"
+                src="https://i.postimg.cc/hGDnyj4b/mentor-2.png"
+                alt="img"
+              />
+              <h4 className="mentor-name">Muhadi Ahmat</h4>
+              <p className="mentor-designation">Senior Client Partner</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className="wow fadeInUp"
+              data-wow-duration="1.05s"
+              data-wow-delay="400ms"
+            >
+              <img
+                className="img-fluid"
+                src="https://i.postimg.cc/LXq8DXvQ/mentor-3.png"
+                alt="img"
+              />
+              <h4 className="mentor-name">Jessica Angel</h4>
+              <p className="mentor-designation">Director ACT</p>
+            </div>
+          </SwiperSlide>
+          {/* Additional Slides */}
+          <SwiperSlide>
+            <div
+              className="wow fadeInUp"
+              data-wow-duration="1.05s"
+              data-wow-delay="300ms"
+            >
+              <img
+                className="img-fluid"
+                src="https://i.postimg.cc/DwdFPshw/mentor-1.png"
+                alt="img"
+              />
+              <h4 className="mentor-name">Salehdin Ahdam</h4>
+              <p className="mentor-designation">Head of Power MTI</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className="wow fadeInUp"
+              data-wow-duration="1.05s"
+              data-wow-delay="350ms"
+            >
+              <img
+                className="img-fluid img-middle"
+                src="https://i.postimg.cc/hGDnyj4b/mentor-2.png"
+                alt="img"
+              />
+              <h4 className="mentor-name">Muhadi Ahmat</h4>
+              <p className="mentor-designation">Senior Client Partner</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className="wow fadeInUp"
+              data-wow-duration="1.05s"
+              data-wow-delay="400ms"
+            >
+              <img
+                className="img-fluid"
+                src="https://i.postimg.cc/LXq8DXvQ/mentor-3.png"
+                alt="img"
+              />
+              <h4 className="mentor-name">Jessica Angel</h4>
+              <p className="mentor-designation">Director ACT</p>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
