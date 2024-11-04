@@ -134,7 +134,7 @@ const Business = () => {
                       className="img-fluid"
                       src={slide.imageUrl}
                       alt={slide.altText}
-                      style={{ borderRadius: "16px" }}
+                      style={{ borderRadius: "24px" }}
                     />
                   </SwiperSlide>
                 </div>
